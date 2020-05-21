@@ -9,7 +9,7 @@
     HELLO WORLD
     </header>
     <h1>I'm RK</h1>
-    <p><img src="Downloads/raven.jpg"
+    <p><img src="e:/Downloads/raven.jpg"
             width="500" height="500"</p>
   </body>
   </html>
