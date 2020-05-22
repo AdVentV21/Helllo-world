@@ -1,4 +1,5 @@
-<!Doctype html>
+
+  <!Doctype html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -10,8 +11,9 @@
     I'm RK
     </header>
     <p>
-    <img src="e:/Downloads/raven.jpg" width="500" height="500">
+    <img src="e:/Downloads/raven.jpg" width="550" height="500">
     </p>
+    <main>So it is my first site and it is not ready yet</main>
+    <h2>Wish me luck!</h2>
   </body>
   </html>
-  
