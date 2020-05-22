@@ -5,10 +5,10 @@
   <title>Пример</title>
   </head>
   <body>
-  <header>
-    HELLO WORLD
+  <h1>HELLO WORLD</h1>
+    <header>
+    I'm RK
     </header>
-    <h1>I'm RK</h1>
     <p>
     <img src="e:/Downloads/raven.jpg" width="500" height="500">
     </p>
