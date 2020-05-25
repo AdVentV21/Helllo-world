@@ -1,5 +1,4 @@
-
-  <!Doctype html>
+<!Doctype html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -18,9 +17,9 @@
     <button class="button">
       Тыкни)
     </button>
-    <button clas=button>
+    <p><button clas=button>
       Тыкни если хочешь дружить!
-    </button>
+    </button></p>
     <p>А если не хочешь дружить то я обиделся</p>
   </body>
   </html>
