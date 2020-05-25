@@ -15,7 +15,7 @@
     <main>So it is my first site and it is not ready yet</main>
     <h2>Wish me luck!</h2>
     <button class="button">
-      Тыкни)
+      Бесплатный кликер
     </button>
     <p><button clas=button>
       Тыкни если хочешь дружить!
