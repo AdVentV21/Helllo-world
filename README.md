@@ -15,5 +15,8 @@
     </p>
     <main>So it is my first site and it is not ready yet</main>
     <h2>Wish me luck!</h2>
+    <button class="button">
+    Тыкни сюда)
+    </button>
   </body>
   </html>
