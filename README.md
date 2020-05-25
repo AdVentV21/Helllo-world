@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Пример</title>
+  <title>Сайтик</title>
   </head>
   <body>
   <h1>HELLO WORLD</h1>
@@ -16,7 +16,11 @@
     <main>So it is my first site and it is not ready yet</main>
     <h2>Wish me luck!</h2>
     <button class="button">
-    Тыкни сюда)
+      Тыкни)
     </button>
+    <button clas=button>
+      Тыкни если хочешь дружить!
+    </button>
+    <p>А если не хочешь дружить то я обиделся</p>
   </body>
   </html>
