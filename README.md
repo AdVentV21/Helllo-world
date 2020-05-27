@@ -3,6 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Сайтик</title>
+  <style type="text/css">
+  body {
+    background-color: black;
+    }
+    button {
+border-color: chartreuse;
+color: darkgray;
+    }
+  </style>
   </head>
   <body>
   <h1>HELLO WORLD</h1>
@@ -17,7 +26,7 @@
     <button class="button">
       Бесплатный кликер
     </button>
-    <p><button clas=button>
+   <p><button clas=button>
       Тыкни если хочешь дружить!
     </button></p>
     <p>А если не хочешь дружить то я обиделся</p>
