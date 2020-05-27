@@ -5,11 +5,11 @@
   <title>Сайтик</title>
   <style type="text/css">
   body {
-    background-color: black;
+    background-color: dimgray;
     }
     button {
-border-color: chartreuse;
-color: darkgray;
+border-color: black;
+color: gold;
     }
   </style>
   </head>
@@ -30,5 +30,10 @@ color: darkgray;
       Тыкни если хочешь дружить!
     </button></p>
     <p>А если не хочешь дружить то я обиделся</p>
+    <a href="README.md">
+      <button class="button-link">
+        Ссылка
+      </button>
+    </a>
   </body>
   </html>
