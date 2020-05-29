@@ -1,8 +1,8 @@
-<<!Doctype html>
+<!Doctype html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Сайтик</title>
+  <title>Hello World "ALPS"</title>
   <style type="text/css">
   body {
       background: url(e:/Alps.jpg)no-repeat;
@@ -13,8 +13,21 @@
     }
     .link {
 border-color: black;
-background-color: gold;
+background-color: rgba(0, 162, 255, 0);
 color: black;
+{ 
+    margin: 0; /* Убираем отступы */
+   }
+   .parent {
+    margin: 20%; /* Отступы вокруг элемента */
+    background: cornsilk; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+   } 
+   .child {
+    border: 3px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin: 10px; /* Отступы вокруг */
+   }
     }
   </style>
   </head>
@@ -37,10 +50,12 @@ color: black;
         <big><big>ReadMe</big></big>
       </button>
     </a>
-      <h1 align="center">
+      <div class="parent" align="center">
+        <div class="child" align="center">
       This is <big><big>Alps</big></big>
     <p>BEAUTIFUL</p>
-    </h1>
+        </div>
+      </div>
   </body>
   </html>
 
