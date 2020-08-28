@@ -153,16 +153,36 @@ function showSlides(n) {
 
 // alert('alert');
 
-let userName = prompt('enter your name');
+// var userName = prompt("enter your name");
 
-let userLast = prompt('enter your lastName');
+// var userLast = prompt("enter your lastName");
+var userAge = getAge();
 
-let userAge = prompt('enter your age');
+checkAge();
 
-if (userAge < 0) {
-  alert('false');
-} else if (userAge > 100) {
-  alert('false');
-} else {
-  alert('your name is' + ' ' + userName + ' , ' + 'your last name is' + ' ' + userLast + ' , ' + 'your age is' + ' ' + userAge);
+function checkAge() {
+  if (userAge < 0) {
+    alert("you are not alive");
+  } else if (userAge > 100) {
+    alert("you are not alive");
+    getAge();
+  } else {
+    alert(
+      "your name is" +
+        " " +
+        userName +
+        " , " +
+        "your last name is" +
+        " " +
+        userLast +
+        " , " +
+        "your age is" +
+        " " +
+        userAge
+    );
+  }
+}
+
+function getAge() {
+  return prompt("enter your age");
 }
