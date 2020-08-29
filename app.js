@@ -55,118 +55,30 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-// var name = 'Ratmir';
-// console.log(name);
-// name = 'Ratmirchik';
-// console.log(name);
+let startJs = document.getElementById("startJs");
+startJs.onclick = checkData;
+var userName;
+var userLast;
+var userAge;
+function checkData() {
+  userName = prompt("enter your name");
+  userLast = prompt("enter your lastName");
+  userAge = getAge();
 
-// var age = '12';
-// console.log(age);
+  checkAge();
+}
 
-// const user = {
-//   name: 'Ratmir',
-//   age: '12'
-// }
-// console.log (user)
-
-// {var firstName = 'Ratmir'}
-
-// firstName = 'Andrew'
-
-// console.log (firstName);
-
-//   case 'Andrew':
-//   console.log('firstName is Andrew');
-//   break;
-//   case 'Ratmir':
-//   console.log('firstName is Ratmir');
-//   break;
-//   default:// switch(firstName) {
-
-//   console.log('default');
-// }
-
-// let number = 1;
-// let second = 2;
-
-// if (number > 0) {
-//   second = number;
-// } else {
-//   b += 1;
-// }
-// console.log(second);
-
-// function sayHello(firstName, lastName) {
-//   console.log("Hello world");
-//   console.log(firstName, lastName);
-//   return `Hello ${firstName} ${lastName}`;
-// }
-
-// let res = sayHello("Ratmir", "Kasatkin") + "!";
-// console.log(res);
-
-// const user = {
-//   name: "Ratmir",
-//   age: 12,
-// };
-
-// function getObj(obj) {
-//   console.log(obj);
-//   obj.name = "Ratm";
-// }
-
-// getObj(user);
-
-// const square = function (x) {
-//   return x * x;
-// };
-
-// (function (msg) {
-//   console.log(msg);
-// })("Hello world");
-
-// const numArr = [2, 32, 1234, 54, 323];
-
-// let value;
-
-// value = numArr.length;
-
-// console.log(value, numArr);
-
-// value = Array.isArray(numArr);
-// value = numArr[2];
-// numArr[2] = 12;
-// value = numArr.indexOf(323);
-// value = numArr.push(100);
-// value = numArr.pop();
-// value = numArr.unshift(111);
-// value = numArr.shift();
-// value = numArr.slice(0, 2);
-// value = numArr.splice(1, 2, 'one', 'two');
-// value = numArr.reverse();
-// value = numArr.concat(1, 3);
-// value = numArr.join(' ');
-// value = 'Hello world'.split(' ');
-// // value = 'Hello world'.length;
-
-// console.log(value, numArr);
-
-// alert('alert');
-
-// var userName = prompt("enter your name");
-
-// var userLast = prompt("enter your lastName");
-var userAge = getAge();
-
-checkAge();
-
+function getAge() {
+  return prompt("enter your age");
+}
 function checkAge() {
   if (userAge < 0) {
     alert("you are not alive");
   } else if (userAge > 100) {
     alert("you are not alive");
-    getAge();
+    checkData();
   } else {
+    var sum = Number(userAge) + 20;
     alert(
       "your name is" +
         " " +
@@ -176,13 +88,9 @@ function checkAge() {
         " " +
         userLast +
         " , " +
-        "your age is" +
+        "your age after 20 years is" +
         " " +
-        userAge
+        sum
     );
   }
-}
-
-function getAge() {
-  return prompt("enter your age");
 }
