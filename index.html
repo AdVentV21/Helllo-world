@@ -7,20 +7,39 @@
   </head>
   <body>
     <!-- Tab links -->
-    <div class="tab">
+    <div class="tab" style="width:100%">
       <button
         class="tablinks"
         onclick="openMenu(event, 'Home')"
-        id="defaultOpen"
-      >
+        id="defaultOpen" style="width:33.3%">
         Home
       </button>
-      <button class="tablinks" onclick="openMenu(event, 'Pictures')">
+      <button class="tablinks" onclick="openMenu(event, 'Pictures')" style="width:33.3%">
         Pictures
       </button>
-      <button class="tablinks" onclick="openMenu(event, 'YouTube')">
+      <button class="tablinks" onclick="openMenu(event, 'YouTube')" style="width:33.3%">
         YouTube
       </button>
+      <span id="clock"></span>
+      <script type="text/javascript">
+      function clock() {
+       var date = new Date();
+       var hour = date.getHours();
+       var minute = date.getMinutes();
+       var sec = date.getSeconds();
+       var day=date.getDate();
+       var month=date.getMonth();
+       var year=date.getFullYear();
+       var weekday=date.getDay();
+       var monthes=new Array ('января','февраля','марта','апреля','мая','июня',
+        'июля','августа','сентября','октября','ноября','декабря');
+       var dayNames = new Array('Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота');
+       document.getElementById('clock').innerHTML = '<font size="1">'+dayNames[weekday]+', '+day+' '+monthes[month]+' '+
+        year+' года</font><br>'+(hour<10?'0':'')+hour+':'+(minute<10?'0':'')+minute+':'+(sec<10?'0':'')+sec;
+       window.setTimeout('clock()',1000);
+      }
+      clock();
+      </script>
     </div>
 
     <!-- Tab content -->
@@ -34,9 +53,38 @@
     <button id="startJs">startJs</button>
     <div id="Pictures" class="tabcontent">
       <h3>Галерея</h3>
-      <html>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
+        .tab button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.tab:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.tab button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.tab button:hover {
+    background-color: #3e8e41;
+}
+
+        span {
+          font-size: 120%;
+          color:brown;
+        }
+
         body {
           font-family: Arial;
           margin: 0;
