@@ -54,3 +54,21 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+function charGet(event) {
+  console.log(event.code);
+  if (event.code == "ArrowDown") {
+    console.log(".... ..x. .... ....");
+  }
+  if (event.code == "ArrowLeft") {
+    console.log(".... .x.. .... ....");
+  }
+  if (event.code == "ArrowUp") {
+    console.log(".x.. .... .... ....");
+  }
+  if (event.code == "ArrowRight") {
+    console.log("..x. .... .... ....");
+  }
+}
+
+document.addEventListener("keydown", charGet);
