@@ -96,12 +96,30 @@
     <button class="button">Бесплатный кликер</button>
     <p><button class="button">Тыкни если хочешь дружить!</button></p>
     <button id="startJs">startJs</button>
-    <table border="1" width="500" cellpadding="80">
+    <div id="block"></div>
+    <dvi id="star"> * </dvi>
+    <table border="1" width="300" cellpadding="50">
       <tr>
+        <th></th>
+        <th></th>
         <th></th>
         <th></th>
       </tr>
       <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
       </tr>
@@ -110,9 +128,22 @@
       <h3>Галерея</h3>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <style>
+        #star {
+          left: 155px;
+          top: 363px;
+          position: absolute;
+        }
+        #block {
+          width: 40px;
+          height: 40px;
+          left: 33px;
+          top: 350px;
+          background-color: rgb(0, 0, 0);
+          position: absolute;
+        }
         .tab button {
-          background-color: #4caf50; /* Green background */
-          border: 1px solid green; /* Green border */
+          background-color: #8a0000; /* Green background */
+          border: 1px solid rgb(0, 0, 0); /* Green border */
           color: white; /* White text */
           padding: 10px 24px; /* Some padding */
           cursor: pointer; /* Pointer/hand icon */
@@ -132,7 +163,7 @@
 
         /* Add a background color on hover */
         .tab button:hover {
-          background-color: #3e8e41;
+          background-color: #ff0000;
         }
 
         span {

@@ -55,20 +55,20 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-function charGet(event) {
-  console.log(event.code);
-  if (event.code == "ArrowDown") {
-    console.log(".... ..x. .... ....");
-  }
-  if (event.code == "ArrowLeft") {
-    console.log(".... .x.. .... ....");
-  }
-  if (event.code == "ArrowUp") {
-    console.log(".x.. .... .... ....");
-  }
-  if (event.code == "ArrowRight") {
-    console.log("..x. .... .... ....");
-  }
-}
+// function charGet(event) {
+//   console.log(event.code);
+//   if (event.code == "ArrowDown") {
+//     console.log(".... ..x. .... ....");
+//   }
+//   if (event.code == "ArrowLeft") {
+//     console.log(".... .x.. .... ....");
+//   }
+//   if (event.code == "ArrowUp") {
+//     console.log(".x.. .... .... ....");
+//   }
+//   if (event.code == "ArrowRight") {
+//     console.log("..x. .... .... ....");
+//   }
+// }
 
-document.addEventListener("keydown", charGet);
+// document.addEventListener("keydown", charGet);
